@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ÉLITE — Overview</title>
+  <meta name="description" content="ÉLITE — Logiciel interne de conciergerie de luxe" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230A0A0A'/><text x='16' y='22' font-family='Georgia,serif' font-size='18' font-weight='600' fill='%23A88B5C' text-anchor='middle'>É</text></svg>" />
+</head>
+<body data-page-title="Overview">
+
+  <div id="app">
+    <div data-page-content>
+
+      <!-- Page header -->
+      <div class="page__header">
+        <div>
+          <h1 class="page__title" id="welcomeTitle">Bonjour Alexandre</h1>
+          <div class="page__subtitle">Voici ce qui se passe aujourd'hui.</div>
+        </div>
+        <div class="page__header-actions">
+          <button class="btn btn--ghost" id="quickReservation">+ Réservation</button>
+          <button class="btn btn--primary" id="quickDemand">
+            + Nouvelle demande
+          </button>
+        </div>
+      </div>
+
+      <!-- Stats grid -->
+      <div class="dash-grid" id="statsGrid"></div>
+
+      <!-- Charts row -->
+      <div class="grid grid-3 mt-4" id="chartsRow"></div>
+
+      <!-- Activity + Priorities -->
+      <div class="dash-row" id="activityRow"></div>
+
+    </div>
+  </div>
+
+  <script src="data/demo-data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/components.js"></script>
+  <script src="script.js"></script>
+  <script src="js/pages/dashboard.js"></script>
+</body>
+</html>

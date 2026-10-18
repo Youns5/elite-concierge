@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ÉLITE — Facturation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230A0A0A'/><text x='16' y='22' font-family='Georgia,serif' font-size='18' font-weight='600' fill='%23A88B5C' text-anchor='middle'>É</text></svg>" />
+</head>
+<body data-page-title="Facturation">
+
+  <div id="app">
+    <div data-page-content>
+      <div class="page__header">
+        <div>
+          <h1 class="page__title">Facturation</h1>
+          <div class="page__subtitle">Chiffre d'affaires, factures et paiements</div>
+        </div>
+        <div class="page__header-actions">
+          <button class="btn btn--ghost" id="exportBtn">Exporter</button>
+          <button class="btn btn--primary" id="newInvoiceBtn">+ Nouvelle facture</button>
+        </div>
+      </div>
+
+      <div id="facturationRoot"></div>
+    </div>
+  </div>
+
+  <script src="../data/demo-data.js"></script>
+  <script src="../js/store.js"></script>
+  <script src="../js/icons.js"></script>
+  <script src="../js/components.js"></script>
+  <script src="../script.js"></script>
+  <script src="../js/pages/facturation.js"></script>
+</body>
+</html>
